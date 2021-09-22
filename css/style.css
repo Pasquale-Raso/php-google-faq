@@ -1,4 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
 body{
     font-family: 'Noto Sans Display', sans-serif;
-color: rgb(59, 58, 58);
+color: rgb(93, 91, 91);
+}
+
+.contenitore{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.font-smal{
+    font-size: 15px;
 }

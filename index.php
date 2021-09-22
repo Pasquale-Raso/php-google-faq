@@ -4,7 +4,7 @@
 <?php $questions = [
     [
         'title' =>
-            "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
+            "<div class= 'margine-alto'> Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?</div>",
         'answer' => "<br/><br/> La recente <a href='#'> decisione della Corte di giustizia dell'Unione europea </a>  ha profonde conseguenze per i motori di ricerca in Europa. La Corte ha stabilito che alcuni utenti hanno il diritto di chiedere ai motori di ricerca come Google di rimuovere risultati relativi a chiavi di ricerca che includono il proprio nome. Per poter essere rimossi, i risultati visualizzati devono essere inadeguati, irrilevanti o non più rilevanti, o eccessivi. <br/><br/>
 
         Da quando questa decisione è stata pubblicata il 13 maggio 2014, abbiamo lavorato incessantemente per uniformarci a essa. Si tratta di una procedura complessa perché dobbiamo valutare ogni singola richiesta e effettuare un bilanciamento tra il diritto dell'individuo a controllare i suoi dati personali ed il diritto di tutti di conoscere e distribuire le informazioni.<br/><br/>
@@ -31,21 +31,19 @@
         'answer' => "<br/><br/>Il tuo account è associato a un paese (o territorio) nei Termini di servizio per poter stabilire due cose:<br/><br/>
         <ol>
             <li>&nbsp&nbsp&nbsp&nbsp&nbsp La società consociata Google che offre i servizi, tratta le tue informazioni ed è responsabile del rispetto delle leggi sulla privacy vigenti. Generalmente Google offre i propri servizi per i consumatori tramite una delle due società seguenti:</li>
-            
                 <ol type='a'><br/><br/>
                     <li>&nbsp&nbsp&nbsp&nbsp&nbsp Google Ireland Limited, se gli utenti sono residenti nello Spazio economico europeo (paesi dell'Unione europea, oltre a Islanda, Liechtenstein e Norvegia) o in Svizzera.</li><br/><br/>
                     <li>&nbsp&nbsp&nbsp&nbsp&nbsp LLC, con sede negli Stati Uniti, per il resto del mondo.</li><br/><br/>
                 </ol>
-            
-            <li>&nbsp&nbsp&nbsp&nbsp&nbsp La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.<br/><br/></li>
+            <li>&nbsp&nbsp&nbsp&nbsp&nbsp La versione dei termini che regola il nostro rapporto, che può variare in base alle leggi locali.</li>
         </ol>
         
-        Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.<br/><br/><br/><br/>
+        Tieni presente che i servizi Google sono fondamentalmente gli stessi a prescindere dalla società consociata che li offre o dal paese a cui è associato il tuo account.<br/><br/>
         
 
 
 
-        <h3>Stabilire il paese associato al tuo account</h3><br/><br/>
+        <h5>Stabilire il paese associato al tuo account</h5><br/><br/>
 
         Quando crei un nuovo Account Google, lo associamo a un paese in base a dove è stato creato. Per quanto riguarda gli account creati almeno un anno fa, usiamo il paese da cui accedi solitamente ai servizi Google, in genere i servizi in cui hai trascorso più tempo nell'ultimo anno.<br/><br/>
         
@@ -67,6 +65,16 @@
     ],
 ]; ?>
 
+<!-- LISTA ARRAY IN PHP PER HEADER --> 
+
+<?php $menus = [
+    'Introduzione',
+    'Norme sulla privacy',
+    'Termini di servizio',
+    'Tecnologie',
+    'Domande frequenti',
+]; ?>
+
 <!-- HTML -->
 
 <!DOCTYPE html>
@@ -78,22 +86,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title> Google FAQs</title>
 </head>
 <body>
-    <header>
-
+    <header class="headerbg ">
+        <div class=" d-flex align-items-center justify-content-between mt-3 ms-4 me-4">
+            <div class="d-flex align-items-center">
+                <img class="logo" src="https://1000marche.net/wp-content/uploads/2020/03/Google-logo.png" alt="">
+                <h5 class="grey m-2">Privacy e termini</h5>
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="fs-2 grey m-2 send">&#9783;</p>
+                    <div class="user">
+                        <p class="fs-2 text-center" >&#128163;</p>
+                    </div>
+            </div>
+        </div>
+        <?php foreach ($menus as $menu) { ?>
+            <a class="a-header ms-3 fs-6 ps-2" href="#"><?php echo $menu; ?></a>
+            <?php } ?>
+            <hr class="m-0 p-0 mt-3">
     </header>
     <main>
         <?php foreach ($questions as $question) { ?>
             <div class="contenitore">
-            <h2><?php echo $question['title']; ?></h2>
-            <p class="font-smal"><?php echo $question['answer']; ?></p>
+                <h4><?php echo $question['title']; ?></h4>
+                <p class="font-smal"><?php echo $question['answer']; ?></p>
+            </div>
         <?php } ?>
     </main>
     <footer>
-        
+        <div class="box-footer">
+            <div class="contenitore">
+                <div class="d-flex align-items-center justify-content-between p-3">
+                    <h6 class="h6">Google - Tutto su Goolge - privacy - Termini</h6>
+
+                    <!-- LISTA ARRAY IN PHP PER LINGUE -->
+                    <form >
+                        <center>
+                            <select>
+                                <option>Lingue</option>
+                                <?php
+                                $languages = [
+                                    'Afrikaans',
+                                    'Bahasa Indonesia',
+                                    'Bahasa Melayu',
+                                    'Català',
+                                    'Čeština',
+                                    'Dansk',
+                                    'Deutsch',
+                                    'Eesti',
+                                    'English',
+                                    'English (United Kingdom)',
+                                    'Español',
+                                    'Español (Latinoamérica)',
+                                    'Euskara',
+                                    'Filipino',
+                                    'Français',
+                                    'Français (Canada)',
+                                    'Galego',
+                                    'Hrvatski',
+                                    'Isizulu',
+                                    'Íslenska',
+                                    'Italiano',
+                                    'Kiswahili',
+                                    'Latviešu',
+                                    'Lietuvių',
+                                    'Magyar',
+                                    'Nederlands',
+                                    'Norsk',
+                                    'Polski',
+                                    'Português (Brasil)',
+                                    'Português (Portugal)',
+                                    'Română',
+                                    'Slovenčina',
+                                    'Slovenščina',
+                                    'Srpski',
+                                    'Suomi',
+                                    'Svenska',
+                                    'Tiếng Việt',
+                                    'Türkçe',
+                                    'Ελληνικά',
+                                    'Български',
+                                    'Русский',
+                                    'Српски',
+                                    'Українська',
+                                    '‫עברית‬',
+                                    '‫اردو‬',
+                                    'አማርኛ',
+                                    'मराठी',
+                                    'हिन्दी',
+                                    'বাংলা',
+                                    'ગુજરાતી',
+                                    'தமிழ்',
+                                    'తెలుగు',
+                                    'ಕನ್ನಡ',
+                                    'മലയാളം',
+                                    'ไทย',
+                                    '한국어',
+                                    '中文 (香港)',
+                                    '中文（简体中文）',
+                                    '中文（繁體中文）',
+                                    '日本語',
+                                ];
+                                foreach ($languages as $language) { ?>
+                                <option><?php echo $language; ?></option>
+                            </select>
+                        </center>
+                    </form>
+                    <?php }
+                                ?>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
+ 

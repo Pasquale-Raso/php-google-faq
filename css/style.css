@@ -2,18 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
+    
   }
 
 body{
     font-family: 'Noto Sans Display', sans-serif;
-color: rgb(93, 91, 91);
+color: rgb(36, 35, 35);
 }
 
 .contenitore{
     max-width: 1000px;
     margin: 0 auto;
 }
+.margine-alto{
+    padding-top: 200px;
+}
 .font-smal{
     font-size: 15px;
+}
+.headerbg{
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+.user{
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+.grey{
+    color: grey;
+}
+.logo{
+    cursor: pointer;
+    width: 80px;
+    height: 100%;
+}
+.send{
+    cursor: pointer;
+}
+.a-header{
+ text-decoration: none;
+ color: grey;
+}
+header, a{
+    padding-bottom: 16px;
+}
+
+header a:hover{
+    border-bottom: 3px solid;
+}
+.box-footer{
+    background-color: rgb(231, 227, 227);
+}
+.h6{
+    font-size: 11px;
+    color: grey;
 }

@@ -125,79 +125,77 @@
 
                     <!-- LISTA ARRAY IN PHP PER LINGUE -->
                     <form >
-                        <center>
-                            <select>
-                                <option>Lingue</option>
-                                <?php
-                                $languages = [
-                                    'Afrikaans',
-                                    'Bahasa Indonesia',
-                                    'Bahasa Melayu',
-                                    'Català',
-                                    'Čeština',
-                                    'Dansk',
-                                    'Deutsch',
-                                    'Eesti',
-                                    'English',
-                                    'English (United Kingdom)',
-                                    'Español',
-                                    'Español (Latinoamérica)',
-                                    'Euskara',
-                                    'Filipino',
-                                    'Français',
-                                    'Français (Canada)',
-                                    'Galego',
-                                    'Hrvatski',
-                                    'Isizulu',
-                                    'Íslenska',
-                                    'Italiano',
-                                    'Kiswahili',
-                                    'Latviešu',
-                                    'Lietuvių',
-                                    'Magyar',
-                                    'Nederlands',
-                                    'Norsk',
-                                    'Polski',
-                                    'Português (Brasil)',
-                                    'Português (Portugal)',
-                                    'Română',
-                                    'Slovenčina',
-                                    'Slovenščina',
-                                    'Srpski',
-                                    'Suomi',
-                                    'Svenska',
-                                    'Tiếng Việt',
-                                    'Türkçe',
-                                    'Ελληνικά',
-                                    'Български',
-                                    'Русский',
-                                    'Српски',
-                                    'Українська',
-                                    '‫עברית‬',
-                                    '‫اردو‬',
-                                    'አማርኛ',
-                                    'मराठी',
-                                    'हिन्दी',
-                                    'বাংলা',
-                                    'ગુજરાતી',
-                                    'தமிழ்',
-                                    'తెలుగు',
-                                    'ಕನ್ನಡ',
-                                    'മലയാളം',
-                                    'ไทย',
-                                    '한국어',
-                                    '中文 (香港)',
-                                    '中文（简体中文）',
-                                    '中文（繁體中文）',
-                                    '日本語',
-                                ];
-                                foreach ($languages as $language) { ?>
-                                <option><?php echo $language; ?></option>
-                            </select>
-                        </center>
+                        <select>
+                            <option>Lingue</option>
+                            <?php
+                            $languages = [
+                                'Afrikaans',
+                                'Bahasa Indonesia',
+                                'Bahasa Melayu',
+                                'Català',
+                                'Čeština',
+                                'Dansk',
+                                'Deutsch',
+                                'Eesti',
+                                'English',
+                                'English (United Kingdom)',
+                                'Español',
+                                'Español (Latinoamérica)',
+                                'Euskara',
+                                'Filipino',
+                                'Français',
+                                'Français (Canada)',
+                                'Galego',
+                                'Hrvatski',
+                                'Isizulu',
+                                'Íslenska',
+                                'Italiano',
+                                'Kiswahili',
+                                'Latviešu',
+                                'Lietuvių',
+                                'Magyar',
+                                'Nederlands',
+                                'Norsk',
+                                'Polski',
+                                'Português (Brasil)',
+                                'Português (Portugal)',
+                                'Română',
+                                'Slovenčina',
+                                'Slovenščina',
+                                'Srpski',
+                                'Suomi',
+                                'Svenska',
+                                'Tiếng Việt',
+                                'Türkçe',
+                                'Ελληνικά',
+                                'Български',
+                                'Русский',
+                                'Српски',
+                                'Українська',
+                                '‫עברית‬',
+                                '‫اردو‬',
+                                'አማርኛ',
+                                'मराठी',
+                                'हिन्दी',
+                                'বাংলা',
+                                'ગુજરાતી',
+                                'தமிழ்',
+                                'తెలుగు',
+                                'ಕನ್ನಡ',
+                                'മലയാളം',
+                                'ไทย',
+                                '한국어',
+                                '中文 (香港)',
+                                '中文（简体中文）',
+                                '中文（繁體中文）',
+                                '日本語',
+                            ];
+                            foreach ($languages as $language) { ?>
+                            <option><?php echo $language; ?></option>
+                            <?php }
+                            ?>
+                        </select>
                     </form>
-                    <?php }
-                                ?>
                 </div>
             </div>
         </div>
